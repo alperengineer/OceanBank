@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="OceanBankTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/project_blue</item>
+    <item name="colorPrimaryDark">@color/project_blue</item>
+    <item name="colorAccent">@color/project_blue</item>
+    <item name="android:colorBackground">@color/project_blue</item>
+    </style>
+</resources>

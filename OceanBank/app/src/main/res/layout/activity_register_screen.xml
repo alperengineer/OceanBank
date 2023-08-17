@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".RegisterScreen">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/registerScreenCardView1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/project_blue"
+            android:id="@+id/registerScreenImageView"
+            android:src="@drawable/oceanbanklonglogo">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registerScreenCardView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="5dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/registerScreenFirstNameText"
+            android:hint="Ad"
+            android:textSize="15sp"
+            android:paddingStart="10dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/registerScreenLastNameText"
+            android:hint="Soyad"
+            android:textSize="15sp"
+            android:paddingStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edittext_background"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/registerScreenIdentificationNumber"
+                android:hint="T.C.K.N"
+                android:textSize="15sp"
+                android:paddingStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_background"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/registerScreenPhoneNumber"
+                android:hint="Telefon No"
+                android:textSize="15sp"
+                android:paddingStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_background"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/registerScreenEmailText"
+                android:hint="Email"
+                android:textSize="15sp"
+                android:paddingStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_background"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/registerScreenPasswordText"
+                android:hint="Parola"
+                android:textSize="15sp"
+                android:paddingStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/edittext_background"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        app:layout_constraintTop_toBottomOf="@id/registerScreenCardView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="15dp"
+        android:text="Kayıt Ol"
+        android:textColor="@color/white"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
