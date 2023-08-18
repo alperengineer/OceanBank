@@ -51,31 +51,33 @@
             android:orientation="vertical">
 
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:id="@+id/registerScreenFirstNameText"
-            android:hint="Ad"
-            android:textSize="15sp"
-            android:paddingStart="10dp"
-            android:layout_marginTop="75dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/edittext_background"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/registerScreenFirstNameText"
+                android:hint="Ad"
+                android:textSize="15sp"
+                android:paddingStart="10dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_background"
+                android:inputType="text"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:id="@+id/registerScreenLastNameText"
-            android:hint="Soyad"
-            android:textSize="15sp"
-            android:paddingStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/edittext_background"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/registerScreenLastNameText"
+                android:hint="Soyad"
+                android:textSize="15sp"
+                android:paddingStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/edittext_background"
+                android:inputType="text"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -87,6 +89,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/edittext_background"
+                android:inputType="number"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"/>
 
@@ -100,6 +103,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/edittext_background"
+                android:inputType="number"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"/>
 
@@ -113,6 +117,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
                 android:background="@drawable/edittext_background"
+                android:inputType="textEmailAddress"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"/>
 
@@ -126,6 +131,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="25dp"
                 android:background="@drawable/edittext_background"
+                android:inputType="numberPassword"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"/>
 
@@ -138,6 +144,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/button_background"
         app:layout_constraintTop_toBottomOf="@id/registerScreenCardView2"
+        android:onClick="register"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="100dp"

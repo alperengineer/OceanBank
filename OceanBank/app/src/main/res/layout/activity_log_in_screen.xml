@@ -38,7 +38,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/cardNumberEditText"
+                android:id="@+id/emailEditText"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginStart="10dp"
@@ -58,13 +58,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/edittext_background"
                 android:drawableStart="@drawable/outline_password_24"
                 android:drawablePadding="2dp"
                 android:hint="Parola"
+                android:inputType="numberPassword"
                 android:paddingStart="10dp"
                 android:textSize="18sp" />
 
