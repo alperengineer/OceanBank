@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_gradient"
+    tools:context=".fragment.HomeFragment">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/home_fragment_name_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+      <TextView
+          android:id="@+id/nameTextView"
+          android:layout_width="match_parent"
+          android:layout_height="48dp"
+          android:background="@color/project_blue"
+          android:fontFamily="sans-serif"
+          android:textStyle="bold"
+          android:gravity="center"
+          android:text="Test Text"
+          android:textColor="@color/white"
+          android:textSize="22sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/home_fragment_price_card"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintTop_toBottomOf="@id/home_fragment_name_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_view_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/home_fragment_price_text"
+                android:text="1268,24 ₺"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:fontFamily="@font/league_spartan_bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Son İşlemler"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:textStyle=""
+                android:fontFamily="@font/league_spartan_bold"/>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+      <Button
+          android:id="@+id/load_money"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="YÜKLE"
+          android:textColor="#FFFFFF"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/home_fragment_price_card"
+          android:layout_marginTop="20dp"
+          android:layout_marginStart="55dp"
+          android:layout_marginEnd="240dp"
+          android:background="@drawable/button_background"/>
+
+      <Button
+          android:id="@+id/withdraw_money"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Çek"
+          android:textColor="@color/white"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/home_fragment_price_card"
+          android:layout_marginTop="20dp"
+          android:layout_marginStart="240dp"
+          android:layout_marginEnd="55dp"
+          android:background="@drawable/button_background"/>
+
+
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -13,13 +13,13 @@
         android:theme="@style/OceanBankTheme"
         tools:targetApi="31">
         <activity
-            android:name=".MainPage"
+            android:name=".view.MainPage"
             android:exported="false" />
         <activity
-            android:name=".RegisterScreen"
+            android:name=".view.RegisterScreen"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".view.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LogInScreen"
+            android:name=".view.LogInScreen"
             android:exported="true" />
     </application>
 

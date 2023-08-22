@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/background_gradient"
-    tools:context=".view.RegisterScreen">
+    tools:context=".fragment.SendFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:id="@+id/registerScreenCardView1"
+        android:id="@+id/send_fragment_card_view1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -35,7 +40,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/registerScreenCardView2"
+        android:id="@+id/send_fragment_card_view2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -54,7 +59,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:id="@+id/registerScreenFirstNameText"
+                android:id="@+id/sendFragmentFirstNameText"
                 android:hint="Ad"
                 android:textSize="15sp"
                 android:paddingStart="10dp"
@@ -68,7 +73,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:id="@+id/registerScreenLastNameText"
+                android:id="@+id/sendFragmentLastNameText"
                 android:hint="Soyad"
                 android:textSize="15sp"
                 android:paddingStart="10dp"
@@ -79,11 +84,13 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"/>
 
+
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:id="@+id/registerScreenIdentificationNumber"
-                android:hint="T.C.K.N"
+                android:id="@+id/sendFragmentCardNumberText"
+                android:hint="Kart Numarası"
                 android:textSize="15sp"
                 android:paddingStart="10dp"
                 android:layout_marginTop="5dp"
@@ -96,42 +103,14 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:id="@+id/registerScreenPhoneNumber"
-                android:hint="Telefon No"
-                android:textSize="15sp"
-                android:paddingStart="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/edittext_background"
-                android:inputType="number"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:id="@+id/registerScreenEmailText"
-                android:hint="Email"
-                android:textSize="15sp"
-                android:paddingStart="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/edittext_background"
-                android:inputType="textEmailAddress"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:id="@+id/registerScreenPasswordText"
-                android:hint="Parola"
+                android:id="@+id/sendFragmentValueText"
+                android:hint="Gönderilecek Tutar"
                 android:textSize="15sp"
                 android:paddingStart="10dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="25dp"
                 android:background="@drawable/edittext_background"
-                android:inputType="numberPassword"
+                android:inputType="number"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"/>
 
@@ -142,17 +121,17 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/send_fragment_send_button"
+        app:layout_constraintTop_toBottomOf="@+id/send_fragment_card_view2"
+        android:layout_marginTop="20dp"
         android:background="@drawable/button_background"
-        app:layout_constraintTop_toBottomOf="@id/registerScreenCardView2"
-        android:onClick="register"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Gönder"
+        android:textColor="@color/white"
         android:layout_marginEnd="100dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="15dp"
-        android:text="Kayıt Ol"
-        android:textColor="@color/white"/>
+        android:layout_marginStart="100dp"/>
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
