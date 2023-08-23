@@ -22,6 +22,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
@@ -41,8 +42,7 @@ public class MainPage extends AppCompatActivity {
     FirebaseUser user;
     FirebaseAuth auth;
     FirebaseFirestore firestore;
-    DocumentReference userReferences;
-    String userUID,firstName;
+
 
 
 
@@ -52,16 +52,9 @@ public class MainPage extends AppCompatActivity {
         binding = ActivityMainPageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
-
         auth = FirebaseAuth.getInstance();
         user = FirebaseAuth.getInstance().getCurrentUser();
         firestore = FirebaseFirestore.getInstance();
-        userUID = user.getUid();
-        userReferences = firestore.collection("Users").document(user.getUid());
-        
-
-        System.out.println("AD: " + firstName);
 
 
 

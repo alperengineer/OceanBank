@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Toast;
 
@@ -42,11 +43,12 @@ public class LogInScreen extends AppCompatActivity {
                     .addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                         @Override
                         public void onSuccess(AuthResult authResult) {
-                            Toast.makeText(LogInScreen.this, "Giriş Başarılı", Toast.LENGTH_SHORT).show();
 
+                            Toast.makeText(LogInScreen.this, "Giriş Başarılı", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(LogInScreen.this, MainPage.class);
                             startActivity(intent);
                             finish();
+
                         }
                     }).addOnFailureListener(new OnFailureListener() {
                         @Override
