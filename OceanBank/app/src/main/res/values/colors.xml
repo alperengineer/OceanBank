@@ -4,5 +4,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="project_blue">#4249da</color>   <!--#5270FE-->
-    <color name="project_red">#DA2E2E</color>
+    <color name="project_green">#0ADFB0</color>
+    <color name="project_grey">#76a8dd</color>
+    <color name="project_purple">#7c44ec</color>
 </resources>

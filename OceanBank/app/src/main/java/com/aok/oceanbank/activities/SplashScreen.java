@@ -1,10 +1,12 @@
-package com.aok.oceanbank;
+package com.aok.oceanbank.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.aok.oceanbank.R;
 
 public class SplashScreen extends AppCompatActivity {
 

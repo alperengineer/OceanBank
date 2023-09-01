@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/background_gradient"
-    tools:context=".fragments.SendFragment">
+    tools:context=".fragments.PayBillFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:id="@+id/send_fragment_card_view1"
+            android:id="@+id/pay_bill_fragment_card_view1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -40,7 +40,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/send_fragment_card_view2"
+            android:id="@+id/pay_bill_fragment_card_view2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -59,28 +59,28 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
-                    android:id="@+id/send_fragment_first_name_text"
-                    android:hint="Ad"
+                    android:id="@+id/pay_bill_fragment_organisation_number"
+                    android:hint="Kurum No"
                     android:textSize="15sp"
                     android:paddingStart="10dp"
                     android:layout_marginTop="75dp"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/edittext_background"
-                    android:inputType="text"
+                    android:inputType="number"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"/>
 
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
-                    android:id="@+id/send_fragment_last_name_text"
-                    android:hint="Soyad"
+                    android:id="@+id/pay_bill_fragment_identification_number"
+                    android:hint="T.C.K.N"
                     android:textSize="15sp"
                     android:paddingStart="10dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/edittext_background"
-                    android:inputType="text"
+                    android:inputType="number"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"/>
 
@@ -88,8 +88,8 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
-                    android:id="@+id/send_fragment_card_number_text"
-                    android:hint="Kart Numarası"
+                    android:id="@+id/pay_bill_fragment_price"
+                    android:hint="Tutar"
                     android:textSize="15sp"
                     android:paddingStart="10dp"
                     android:layout_marginTop="5dp"
@@ -106,9 +106,10 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/send_fragment_send_button"
-            android:text="Gönder"
-            app:layout_constraintTop_toBottomOf="@id/send_fragment_card_view2"
+            android:id="@+id/pay_bill_fragment_price_button"
+            android:text="Öde"
+            android:onClick="payBill"
+            app:layout_constraintTop_toBottomOf="@id/pay_bill_fragment_card_view2"
             android:layout_marginStart="110dp"
             android:layout_marginEnd="110dp"
             android:layout_marginTop="20dp"/>
@@ -116,4 +117,4 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</FrameLayout>
+</RelativeLayout>

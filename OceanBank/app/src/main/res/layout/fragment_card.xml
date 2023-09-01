@@ -1,87 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/background_gradient"
-    tools:context=".fragment.CardFragment">
+    tools:context=".fragments.CardFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
         <androidx.cardview.widget.CardView
-            android:id="@+id/credit_card_card_view"
-            android:layout_width="350dp"
-            android:layout_height="210dp"
-            android:layout_marginTop="40dp"
-            app:cardCornerRadius="35dp"
+            android:id="@+id/card_fragment_card_view1"
+            android:layout_width="320dp"
+            android:layout_height="200dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="25dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@drawable/card_gradient_bg">
 
                 <ImageView
-                    android:id="@+id/credit_card_image_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/card_background">
-
-                </ImageView>
-
-                <TextView
-                    android:id="@+id/card_number_text_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="90dp"
-                    android:layout_marginBottom="40dp"
-                    android:fontFamily="@font/credit_card"
-                    android:text="4446 7285 9658 5868"
-                    android:textColor="@color/white"
-                    android:textSize="15sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    android:id="@+id/imageView3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/oceanbank"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/credit_card_name_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="90dp"
-                    android:layout_marginBottom="10dp"
-                    android:fontFamily="sans-serif"
-                    android:text="ALPEREN OĞUZ KÜÇÜKÇAL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="Ocean Card"
                     android:textColor="@color/white"
-                    android:textSize="15sp"
+                    android:textSize="22sp"
+                    android:gravity="center"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/card_number_text_view"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="5dp"/>
 
                 <ImageView
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
-                    android:layout_marginBottom="30dp"
+                    android:id="@+id/imageView2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="10dp"
                     android:src="@drawable/mastercard"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/card_number_text_view" />
-
-                <ImageView
-                    android:layout_width="160dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="140dp"
-                    android:src="@drawable/oceanbanklonglogo"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="4446 7808 1456 8976"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="25dp"
+                    android:fontFamily="@font/credit_card"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -90,4 +83,5 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </FrameLayout>

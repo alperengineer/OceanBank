@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+        android:title="İşlemler">
+            <menu>
+
+                <item
+                    android:id="@+id/side_bar_nav_home"
+                    android:title="Ana Sayfa"
+                    android:icon="@drawable/bottom_nav_home"/>
+
+                <item
+                    android:id="@+id/side_bar_nav_cashback"
+                    android:title="Cashback"
+                    android:icon="@drawable/side_bar_cashback"/>
+
+                <item
+                    android:id="@+id/side_bar_nav_pay_bill"
+                    android:title="Fatura Öde"
+                    android:icon="@drawable/side_bar_pay_bill"/>
+            </menu>
+        </item>
+    </group>
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:title="Uygulama">
+            <menu>
+                <item
+                    android:id="@+id/side_bar_nav_info"
+                    android:title="Hakkında"
+                    android:icon="@drawable/side_bar_info"/>
+
+                <item
+                    android:id="@+id/side_bar_nav_log_out"
+                    android:title="Çıkış Yap"
+                    android:icon="@drawable/side_bar_log_out"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>

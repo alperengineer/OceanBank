@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home"
+        android:id="@+id/bottom_nav_home"
         android:title="Ana Sayfa"
-        android:icon="@drawable/home"/>
+        android:icon="@drawable/bottom_nav_home"/>
 
     <item
-        android:id="@+id/send"
+        android:id="@+id/bottom_nav_send"
         android:title="Para Transferi"
-        android:icon="@drawable/send"/>
+        android:icon="@drawable/bottom_nav_send"/>
 
     <item
-        android:id="@+id/card"
+        android:id="@+id/bottom_nav_card"
         android:title="Ocean Card"
-        android:icon="@drawable/card"/>
+        android:icon="@drawable/bottom_nav_card"/>
 
 </menu>

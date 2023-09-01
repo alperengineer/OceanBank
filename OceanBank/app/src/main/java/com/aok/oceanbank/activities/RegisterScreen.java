@@ -1,4 +1,4 @@
-package com.aok.oceanbank.view;
+package com.aok.oceanbank.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,8 +32,6 @@ public class RegisterScreen extends AppCompatActivity {
 
         auth = FirebaseAuth.getInstance();
         firestore = FirebaseFirestore.getInstance();
-
-
     }
 
     public void register(View view) {
@@ -70,12 +68,10 @@ public class RegisterScreen extends AppCompatActivity {
 
                             setData.put("firstName", firstName);
                             setData.put("lastName", lastName);
-                            setData.put("identificationNumber", identificationNumber);
+                            setData.put("identficationNumber", identificationNumber);
                             setData.put("phoneNumber", phoneNumber);
                             setData.put("email", email);
                             setData.put("password", password);
-
-
 
                             firestore.collection("Users").add(setData)
                                     .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {

@@ -1,4 +1,4 @@
-package com.aok.oceanbank.fragment;
+package com.aok.oceanbank.fragments;
 
 import android.os.Bundle;
 
@@ -12,8 +12,15 @@ import com.aok.oceanbank.R;
 
 
 public class SendFragment extends Fragment {
+    public SendFragment(){
 
+    }
 
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
